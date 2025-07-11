@@ -1,0 +1,24 @@
+[project]
+name = "mjt-testsuite"
+version = "0.1.0"
+description = "A set of test utilities to verify the state of physics simulations on MuJoCo"
+readme = "README.md"
+authors = [
+    { name = "wpumacay", email = "wpumacay@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "mujoco==3.3.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipython>=8.37.0",
+    "pre-commit>=4.2.0",
+    "pybind11-stubgen>=2.5.4",
+    "ruff>=0.12.3",
+]
