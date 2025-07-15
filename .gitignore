@@ -214,3 +214,6 @@ assets/
 
 # Exclude lock-version of python
 .python-version
+
+# Exclude mujoco logs
+MUJOCO_LOG.TXT
